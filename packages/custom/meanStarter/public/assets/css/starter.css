@@ -13,8 +13,13 @@
     font-weight: bold;
     font-style: normal;
 }
+.main-section {
+      width: 60%;
+    margin: auto;
+    margin-top: 50px;
+}
 
-.welcome.container-fluid {
+.welcome {
   margin:18px;
   padding-top:10px;
   background-color:#fff;

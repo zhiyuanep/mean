@@ -2,7 +2,7 @@
 
 import 'angular/angular-csp.css';
 import 'angular-ui-select/select.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'angular-material/angular-material.min.css';
 
 import jQuery from 'jquery';
 import 'angular';
@@ -13,7 +13,9 @@ import 'angular-resource';
 import 'angular-sanitize';
 import 'angular-ui-router';
 import 'angular-jwt';
-import 'angular-bootstrap/ui-bootstrap-tpls';
+import 'angular-material/angular-material.min.js';
+import 'angular-aria/angular-aria.min.js';
+import 'angular-animate/angular-animate.min.js';
 
 window.$ = jQuery;
 
@@ -28,7 +30,7 @@ angular.element(document).ready(function () {
 
 function processModules(modules) {
 
-    var packageModules = ['ngCookies', 'ngResource', 'ui.bootstrap', 'ui.router', 'ui.select', 'ngSanitize'], m, mn;
+    var packageModules = ['ngCookies', 'ngResource', 'ui.router', 'ui.select', 'ngSanitize', 'ngMaterial'], m, mn;
     for (var index in modules) {
         m = modules[index];
         mn = 'mean.' + m.name;
